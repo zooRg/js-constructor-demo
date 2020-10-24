@@ -16,6 +16,7 @@ export class App
 		
 		const update = newBlock =>
 		{
+			if (!newBlock.value) return;
 			this.model.push(newBlock);
 			site.render(this.model);
 		};

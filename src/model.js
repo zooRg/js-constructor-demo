@@ -1,9 +1,9 @@
-import image     from './assets/image.png';
+import image     from './assets/image.jpg';
 import { TextBlock, ColumnsBlock, ImageBlock, TitleBlock } from './classes/blocks';
 
 export const model = [
 	new TitleBlock(
-		'Конструктор сайтов на чистом JavaScript',
+		'Конструктор сайтов',
 		{
 			tag: 'h2',
 			styles: {
@@ -23,7 +23,8 @@ export const model = [
 				'justify-content': 'center'
 			},
 			imageStyles: {
-				width: '500px',
+				width: '100%',
+				'max-width': '700px',
 				height: 'auto'
 			},
 			alt: 'image'
@@ -31,9 +32,9 @@ export const model = [
 	),
 	new ColumnsBlock(
 		[
-			'Приложение на чистом JavaScript, без использования библиотек',
-			'Узнаешь как работают принципы SOLID и ООП в JavaScript за один курс',
-			'JavaScript - это просто, интересно. Научись создавать любые UI своими руками'
+			'Блок 1',
+			'Блок 2',
+			'Блок 3'
 		],
 		{
 			styles: {
@@ -45,7 +46,7 @@ export const model = [
 		}
 	),
 	new TextBlock(
-		`Крутые видео и уроки по JavaScript тут: <a href="https://youtube.com/c/VladilenMinin" target="_blank">Владилен Минин</a>. Тут ты найдешь исчерпывающую информацию по любым аспектам языка, любым фреймворкам, такие как: React, Vue, Angular, Node, Svelte, Express, Next, Nuxt и многое другое. Присоединяйся!`,
+		'Текст на всю ширину',
 		{
 			styles: {
 				background: 'linear-gradient(to left, #f2994a, #f2c94c)',
